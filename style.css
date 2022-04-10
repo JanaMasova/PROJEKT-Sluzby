@@ -1,7 +1,7 @@
 html { box-sizing: border-box; }
 *, :after, :before { box-sizing: inherit; }
 
-body {
+body{
     line-height: 1.5;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
@@ -99,7 +99,8 @@ p{
 }
 
 .ikona{
-    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (min-width: 640px) {
@@ -125,10 +126,13 @@ p{
         margin-right: 20px;
     }
 
+    .uvod img{
+        max-width: 400px;
+        width: 100%;
+    }
 
     .kontejner{
         display: flex;
-
     }
 
     .box{
@@ -140,6 +144,103 @@ p{
     .ikona{
         height: 40px;
     }
+}
 
+@media screen and (min-width: 1100px) {
+    header,
+    section{
+        max-width: 1040px;
+    }
+
+    .uvod{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .kontejnerUvod{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 60px;
+        justify-content: center;
+    }
+
+    .obrazekUvod{
+        max-width: 490px;
+        width: 100%;
+        
+    }
+
+    .uvod img{
+        max-width: 425px;
+        width: 100%;
+    }
+
+    .uvod .text{
+        text-align: left;
+        max-width: 490px;
+    }
+
+    .uvod hr{
+        margin-left: 0;
+    }
+
+    header{
+        margin-top: 135px;
+    }
+
+    .sluzbyKancelare{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .sluzbyDelegatu{
+        display: flex;
+    }
+
+    .sluzbyText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sluzbyText .text{
+        width: 430px;
+    }
+
+    .sluzbyKancelare h2,
+    .sluzbyKancelare .text{
+        text-align: left;
+        margin-left: 60px;
+        
+    }
+
+    .sluzbyDelegatu h2,
+    .sluzbyDelegatu .text{
+        text-align: left;
+        margin-right: 60px;
+    }
+
+    .kontejner{
+        max-width: 550px;
+        width: 100%;
+        flex: 1 0 100%;
+    }
+
+    .sluzbyKancelare .planovani{
+        margin-left: 0;
+    }
+
+    .sluzbyKancelare .letenky{
+        margin-right: 0;
+    }
+
+    .sluzbyKancelare .vylety{
+        margin-left: 0;
+    }
+
+    .sluzbyKancelare .karavan{
+        margin-right: 0;
+    }
 
 }
